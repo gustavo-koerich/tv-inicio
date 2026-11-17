@@ -1,0 +1,19 @@
+{
+  "id": "br.casa.inicio",
+  "version": "0.3.1",
+  "vendor": "Casa",
+  "type": "web",
+  "main": "index.html",
+  "title": "Início",
+  "icon": "assets/icon.png",
+  "largeIcon": "assets/largeIcon.png",
+  "bgColor": "#000000",
+  "iconColor": "#000000",
+  "resolution": "1920x1080",
+  "disableBackHistoryAPI": true,
+  "handlesRelaunch": true,
+  "requiredPermissions": [
+    "applications",
+    "applications.launcher"
+  ]
+}

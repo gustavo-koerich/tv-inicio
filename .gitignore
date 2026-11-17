@@ -1,0 +1,4 @@
+node_modules/
+dist/
+app/assets/intro.mp4
+hangar.yaml

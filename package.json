@@ -1,0 +1,17 @@
+{
+  "name": "tv-inicio",
+  "version": "1.0.0",
+  "description": "Tela inicial personalizada para TVs LG webOS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node deploy.mjs"
+  },
+  "keywords": [],
+  "author": "Gustavo Koerich",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@webos-tools/cli": "^3.2.6"
+  }
+}

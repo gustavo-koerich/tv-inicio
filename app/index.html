@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Início</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="claro">
+  <div id="fundo"><div id="fundoImg"></div></div>
+
+  <div id="pagina">
+    <!-- Tela 1: vitrine -->
+    <header id="cabecalho">
+      <h1>Para você</h1>
+      <nav id="abas">
+        <div class="aba ativa" data-f data-grupo="abas" data-aba="explorar">Explorar</div>
+        <div class="aba" data-f data-grupo="abas" data-aba="filmes">Filmes</div>
+        <div class="aba" data-f data-grupo="abas" data-aba="series">Séries</div>
+      </nav>
+      <div id="botoesTopo">
+        <span id="relogio"></span>
+        <div class="redondo" data-f data-grupo="topo" data-acao="app:com.webos.app.livetv" data-icone="tv"></div>
+        <div class="redondo" data-f data-grupo="topo" data-acao="entradas" data-icone="hdmi"></div>
+        <div class="redondo" data-f data-grupo="topo" data-acao="ajustes" data-icone="engrenagem"></div>
+      </div>
+    </header>
+
+    <section id="vitrine">
+      <div id="cartoes"></div>
+    </section>
+
+    <section id="dock" class="vidro"></section>
+
+    <!-- Tela 2: entradas, atalhos e widgets -->
+    <section id="extras">
+      <div id="blocoEntradas">
+        <h2>Entradas</h2>
+        <div id="entradas"></div>
+      </div>
+      <div id="blocoAtalhos">
+        <h2>Atalhos</h2>
+        <div id="atalhos">
+          <div class="chip" data-f data-grupo="atalhos" data-acao="todos"><i data-icone="grade"></i><span>Todos os Apps</span></div>
+          <div class="chip" data-f data-grupo="atalhos" data-acao="ajustes"><i data-icone="engrenagem"></i><span>Ajustes do Início</span></div>
+          <div class="chip" data-f data-grupo="atalhos" data-acao="app:com.palm.app.settings"><i data-icone="tv"></i><span>Ajustes da TV</span></div>
+        </div>
+      </div>
+      <div id="widgets"></div>
+    </section>
+  </div>
+
+  <!-- Painéis sobrepostos -->
+  <div id="painelTodos" class="painel"><div class="caixa vidro">
+    <h2>Todos os Apps</h2>
+    <div id="gradeApps"></div>
+  </div></div>
+
+  <div id="painelAjustes" class="painel"><div class="caixa vidro estreita">
+    <h2><i data-icone="engrenagem"></i>Ajustes do Início</h2>
+    <div id="listaAjustes"></div>
+    <p class="dica">OK ou ‹ › mudam o valor · Voltar fecha</p>
+  </div></div>
+
+  <div id="aviso"></div>
+
+  <div id="intro">
+    <video id="introVideo" muted playsinline preload="auto"></video>
+    <div id="introTexto"></div>
+  </div>
+
+  <script src="webOSTV.js"></script>
+  <script src="config.js"></script>
+  <script src="icones.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
